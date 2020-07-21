@@ -1,0 +1,48 @@
+body {
+    background-image: url('../img/pattern.jpg');
+}
+
+header {
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin: 5;
+    padding: 5;
+}
+
+section {
+    width: 800px;
+    margin: auto;
+    background-color: white;
+}
+
+article {
+    margin: auto;
+    padding-top: 20;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    display: block;
+    background-color: black;
+    height: 50;
+    position: relative;
+}
+
+h5 {
+    margin: auto;
+    padding: 15;
+}
