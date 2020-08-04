@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h4><strong>Sign Up Form</strong></h4>
+    <form action="{{ url('/welcome') }}" method="POST">
+        @csrf
+        <label>First Name:</label><br><br>
+        <input type="text"><br><br>
+        <label>Last Name:</label><br><br>
+        <input type="text"><br><br>
+        <label>Gender:</label><br><br>
+        <input type="radio" name="gender"> Male <br>
+        <input type="radio" name="gender"> Female <br>
+        <input type="radio" name="gender"> Other <br><br>
+        <label>Nationality:</label> <br> <br>
+        <select>
+            <option>Indonesian</option>
+            <option>Singapure</option>
+            <option>Malaysian</option>
+            <option>Australian</option>
+        </select><br><br>
+        <label>Language Spoken:</label><br><br>
+        <input type="checkbox" name="lspoken">Bahasa Indonesia <br>
+        <input type="checkbox" name="lspoken">English <br>
+        <input type="checkbox" name="lspoken">Other <br><br>
+        <label>Bio:</label><br><br>
+        <textarea cols="30" rows="10"></textarea><br>
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+
+</html>
