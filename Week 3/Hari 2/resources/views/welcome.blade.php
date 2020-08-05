@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <h1>SELAMAT DATANG!</h1>
+    <h1>SELAMAT DATANG {{ $username }}</h1>
     <p><strong>Terima kasih telah bergabung di Sanberbook.Social Media kita bersama!</strong></p>
 </body>
 

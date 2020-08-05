@@ -11,8 +11,9 @@ class AuthController extends Controller
         return view('register');
     }
 
-    public function welcome()
+    public function welcome(Request $request)
     {
-        return view('welcome');
+        $username = $request->fname;
+        return view('welcome',compact('username'));
     }
 }
