@@ -11,6 +11,9 @@
 |
 */
 
-Route::get('/', 'HomeController@index');
-Route::get('/register','AuthController@register');
-Route::post('/welcome','AuthController@welcome');
+//Route::get('/', 'HomeController@index');
+//Route::get('/register','AuthController@register');
+//Route::post('/welcome','AuthController@welcome');
+
+Route::get('/', 'TemplateController@index');
+Route::get('/data-tables', 'TemplateController@dataTable');
