@@ -17,7 +17,7 @@ class CreatePertanyaanTable extends Migration
             $table->increments('id');
             $table->string('judul',45);
             $table->string('isi',255);
-            $table->unsignedInteger('profile_id');
+            $table->unsignedInteger('profile_id')->nullable();
             $table->timestamps();
         });
         Schema::table('pertanyaan', function (Blueprint $table) {

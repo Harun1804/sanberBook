@@ -17,3 +17,11 @@
 
 Route::get('/', 'TemplateController@index');
 Route::get('/data-tables', 'TemplateController@dataTable');
+
+Route::get('/posts', 'PostController@index');
+Route::get('/posts/create', 'PostController@create');
+Route::post('/posts/store', 'PostController@store');
+Route::get('/posts/{id}', 'PostController@show');
+Route::get('/posts/{id}/edit', 'PostController@edit');
+Route::put('/posts/{id}/update', 'PostController@update');
+Route::delete('/posts/{id}/delete', 'PostController@destroy');
